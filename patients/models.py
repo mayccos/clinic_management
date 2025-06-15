@@ -4,6 +4,7 @@ from django.contrib import admin
 
 
 class Patient(models.Model):
+    objects = None
     GENDER_CHOICES = [
         ('M', 'Male'),
         ('F', 'Female'),

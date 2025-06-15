@@ -32,14 +32,11 @@
   background-color: #0975C3;
   border-radius: 5px;
   font-size: 16px;
-  padding-left: 11px;
-  padding-right: 4px;
-  padding-bottom: 6px;
-  padding-top: 6px;
   line-height: 120%;
   text-align: center;
   margin-top: 15px;
   margin-bottom: 5px;
+  padding: 6px 4px 6px 11px;
 }
 
 /* Table container */
@@ -92,7 +89,9 @@
 .table-custom tbody td {
     color: #333; /* Texte sombre pour les cellules */
 }
-
+table{
+    border: 0;
+}
 button{
     height: 35px;
     width: 175px;

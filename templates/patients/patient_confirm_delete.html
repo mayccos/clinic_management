@@ -2,9 +2,10 @@
 
 
 {% block content %}
+<h2>Delete Patient</h2>
     <form method="post" enctype="multipart/form-data">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit" >Save</button>
+    <button type="submit" >Delete</button>
     </form>
 {% endblock %}
