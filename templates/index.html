@@ -1,10 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
 
-</body>
-</html>
+    <div style="margin-left:100px; text-align: center; padding: 25px;">
+    <table border="0" width="80%">
+    <tr>
+        <td><a href="#">
+            <img src="{% static '/img/patient.png' %}" width="175" height="150"/>
+        </a></td>
+        <td>
+            <a href="#">
+                <img src="{% static '/img/medical-staff.png' %}" width="175" height="170"/></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+             <a href="#">
+                <img src="{% static '/img/administrator.png' %}" width="175" height="170"/></a>
+        </td>
+        <td>
+             <a href="#">
+                 <img src="{% static '/img/payment.png' %}" width="175" height="170"/></a>
+        </td>
+    </tr>
+    </table>
+    </div>
+
+{% endblock %}
